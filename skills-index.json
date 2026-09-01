@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-01T11:45:48.687Z",
-  "revision": "1.3.0-2026-09-01",
+  "generatedAt": "2026-09-01T12:11:10.165Z",
+  "revision": "1.4.0-2026-09-01",
   "items": [
     {
       "id": "academy-guide",
@@ -10,7 +10,7 @@
         "learning",
         "document"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -19,7 +19,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/academy-guide/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/academy-guide/SKILL.md",
         "sha256": "6ff2e73e5279add9dc3f8f492460a52ea4ec083651a8b434f071e6632e182bca"
       }
     },
@@ -30,7 +30,7 @@
         "design",
         "creative"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -39,8 +39,27 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/algorithmic-art/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/algorithmic-art/SKILL.md",
         "sha256": "3bc4092c09804853186524c826bc0621b940bb6122c05b84496dff95388e6eef"
+      }
+    },
+    {
+      "id": "brainstorming",
+      "description": "在任何创造性工作之前必须使用此技能——创建功能、构建组件、添加功能或修改行为。在实现之前先探索用户意图、需求和设计。",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/brainstorming/SKILL.md",
+        "sha256": "91e11cf6de77ae183a7fb7b2046e2e71181af537c3ca79a42fc6c37cf6bdc64c"
       }
     },
     {
@@ -50,7 +69,7 @@
         "design",
         "marketing"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -59,7 +78,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/brand-guidelines/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/brand-guidelines/SKILL.md",
         "sha256": "1120b3769e2985cefb3d25be981b1f914abeba57ae079b83c20c666c164fa9fe"
       }
     },
@@ -70,7 +89,7 @@
         "design",
         "creative"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -79,8 +98,84 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/canvas-design/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/canvas-design/SKILL.md",
         "sha256": "a1f288079624402f30682753c1d43920b6664785698d21d3e7aa197450a6448b"
+      }
+    },
+    {
+      "id": "chinese-code-review",
+      "description": "中文 review 沟通参考——话术模板、分级标注（必须修复/建议修改/仅供参考）、国内团队常见反模式应对。仅在用户显式 /chinese-code-review 时调用，不要根据上下文自动触发。",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/chinese-code-review/SKILL.md",
+        "sha256": "51326bc6e097ff69251b36335c31c768ba0dc8ca8204d2c81b8a4826ffab0682"
+      }
+    },
+    {
+      "id": "chinese-commit-conventions",
+      "description": "中文 commit 与 changelog 配置参考——Conventional Commits 中文适配、commitlint/husky/commitizen 中文模板、conventional-changelog 中文配置。仅在用户显式 /chinese-commit-conventions 时调用，不要根据上下文自动触发。",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/chinese-commit-conventions/SKILL.md",
+        "sha256": "64dad78d77bb872394322f79b580078eea1739bed01111894ffffbfdec492e4f"
+      }
+    },
+    {
+      "id": "chinese-documentation",
+      "description": "中文文档排版参考——中英文空格、全半角标点、术语保留、链接格式、中文文案排版指北约定。仅在用户显式 /chinese-documentation 时调用，不要根据上下文自动触发。",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/chinese-documentation/SKILL.md",
+        "sha256": "58323397177b6343bd3234f9e4acd8891d58f08cf8076b26fd98296308203a0a"
+      }
+    },
+    {
+      "id": "chinese-git-workflow",
+      "description": "国内 Git 平台配置参考——Gitee、Coding.net、极狐 GitLab、CNB 的 SSH/HTTPS/凭据/CI 接入差异与镜像同步配置。仅在用户显式 /chinese-git-workflow 时调用，不要根据上下文自动触发。",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/chinese-git-workflow/SKILL.md",
+        "sha256": "e428dc6f0c3883941e15598db5f5d9ec066a3d3528cbbd565d98273aad900aa1"
       }
     },
     {
@@ -90,7 +185,7 @@
         "developer-tools",
         "api"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -99,7 +194,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/claude-api/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/claude-api/SKILL.md",
         "sha256": "f8cade34355421caa6bde3f3ca2bfcab0621c64dcd5fe21f2d97d5cb227adb60"
       }
     },
@@ -109,7 +204,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "luomious",
         "url": "https://github.com/luomious/dsh-skill-catalog"
@@ -118,7 +213,7 @@
       "license": null,
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/code-review/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/code-review/SKILL.md",
         "sha256": "79820bb0b79b1999b1a43db5809c0c528ba8e2df58551cd3b8ff907be8992cf3"
       }
     },
@@ -129,7 +224,7 @@
         "writing",
         "analysis"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -138,8 +233,27 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/discernment-nudge/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/discernment-nudge/SKILL.md",
         "sha256": "230e6665f4f253544a1be67fa5f5f78e66b36f319db0c3c413516fddc45b3eb9"
+      }
+    },
+    {
+      "id": "dispatching-parallel-agents",
+      "description": "当面对 2 个以上可以独立进行、无共享状态或顺序依赖的任务时使用",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/dispatching-parallel-agents/SKILL.md",
+        "sha256": "5aa29e0838943f26b46e09e9e49b69f9f3580af5ebaeb7a2d87533dadf0295b2"
       }
     },
     {
@@ -149,7 +263,7 @@
         "office",
         "writing"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -158,7 +272,7 @@
       "license": null,
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/doc-coauthoring/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/doc-coauthoring/SKILL.md",
         "sha256": "2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4"
       }
     },
@@ -169,7 +283,7 @@
         "office",
         "document"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -178,8 +292,46 @@
       "license": "Proprietary. LICENSE.txt has complete terms",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/docx/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/docx/SKILL.md",
         "sha256": "5e030c1393a73657a9ea147c53491c63d8121d84cf2cd0c9fda15c70483af9ba"
+      }
+    },
+    {
+      "id": "executing-plans",
+      "description": "当你有一份书面实现计划需要在单独的会话中执行，并设有审查检查点时使用",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/executing-plans/SKILL.md",
+        "sha256": "1b25bb251f226897ce8dcae888748efa25c6931d37e8c1f3f61a543571fa3e68"
+      }
+    },
+    {
+      "id": "finishing-a-development-branch",
+      "description": "当实现完成、所有测试通过、需要决定如何集成这份工作时使用",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/finishing-a-development-branch/SKILL.md",
+        "sha256": "6e891b0115346a8195b502e259f13fe1bce503091852a7e577e2628916e64f5b"
       }
     },
     {
@@ -189,7 +341,7 @@
         "design",
         "web"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -198,7 +350,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/frontend-design/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/frontend-design/SKILL.md",
         "sha256": "1608ea77fbb6fc30d13a97d12cfa8ebf31358d40f0dd97beed24829d6b3f45dd"
       }
     },
@@ -208,7 +360,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "luomious",
         "url": "https://github.com/luomious/dsh-skill-catalog"
@@ -217,7 +369,7 @@
       "license": null,
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/git-commit-message/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/git-commit-message/SKILL.md",
         "sha256": "cd2bd537c111ef057804c5c060492484e895aa310b18fe7c31c53f91983354ab"
       }
     },
@@ -228,7 +380,7 @@
         "writing",
         "communication"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -237,7 +389,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/internal-comms/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/internal-comms/SKILL.md",
         "sha256": "067b7587a344a928fc6534ef66b1bcd591fc7c26d207ea7ca3334aeb678d6475"
       }
     },
@@ -247,7 +399,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "luomious",
         "url": "https://github.com/luomious/dsh-skill-catalog"
@@ -256,7 +408,7 @@
       "license": null,
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/log-analysis/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/log-analysis/SKILL.md",
         "sha256": "375ea6218bbd19f609820e0272b0c92efc88ed68a4e259b2bb58efdb7b1486e8"
       }
     },
@@ -267,7 +419,7 @@
         "developer-tools",
         "mcp"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -276,7 +428,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/mcp-builder/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/mcp-builder/SKILL.md",
         "sha256": "0f4592dcb53cf2b5d6b7febee6b4152018b565551a1c29e3c612f57b218ab295"
       }
     },
@@ -286,7 +438,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "luomious",
         "url": "https://github.com/luomious/dsh-skill-catalog"
@@ -295,7 +447,7 @@
       "license": null,
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/paper-summary/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/paper-summary/SKILL.md",
         "sha256": "5a98bb0b1ec4c25db15630071672dda087f44c64249525844b82487aa1dcf860"
       }
     },
@@ -306,7 +458,7 @@
         "office",
         "document"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -315,7 +467,7 @@
       "license": "Proprietary. LICENSE.txt has complete terms",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/pdf/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/pdf/SKILL.md",
         "sha256": "9f78b8359fbd4943ad260a7a1e436e5a96503406d6c34e99f69223d647d85b9c"
       }
     },
@@ -326,7 +478,7 @@
         "office",
         "presentation"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -335,8 +487,46 @@
       "license": "Proprietary. LICENSE.txt has complete terms",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/pptx/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/pptx/SKILL.md",
         "sha256": "8dd8d7325fd67ab17ad5097f924c8cf2a3d9b21bccbf087c2d770eb86cd7c1fb"
+      }
+    },
+    {
+      "id": "receiving-code-review",
+      "description": "收到代码审查反馈后、实施建议之前使用，尤其当反馈不明确或技术上有疑问时——需要技术严谨性和验证，而非敷衍附和或盲目执行",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/receiving-code-review/SKILL.md",
+        "sha256": "f8d534ce6edf899aafbb6054a86e8f1da0187c118be0b4039d86cfde611c5a34"
+      }
+    },
+    {
+      "id": "requesting-code-review",
+      "description": "完成任务、实现重要功能或合并前使用，用于验证工作成果是否符合要求",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/requesting-code-review/SKILL.md",
+        "sha256": "4629ab5686d32a1e6bea243eaf9a9aa400edba50e49b15f00d597992ccb10895"
       }
     },
     {
@@ -346,7 +536,7 @@
         "developer-tools",
         "meta"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -355,7 +545,7 @@
       "license": null,
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/skill-creator/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/skill-creator/SKILL.md",
         "sha256": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf"
       }
     },
@@ -366,7 +556,7 @@
         "creative",
         "communication"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -375,8 +565,65 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/slack-gif-creator/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/slack-gif-creator/SKILL.md",
         "sha256": "2efca615ce55a3edd8fc05c779068a8085816617991987e446606403cd3abb22"
+      }
+    },
+    {
+      "id": "subagent-driven-development",
+      "description": "当在当前会话中执行包含独立任务的实现计划时使用",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/subagent-driven-development/SKILL.md",
+        "sha256": "27081029a6b06e8f9d6cea6bc1ab8b444869dcd5575383760e0c4ec11b6229c4"
+      }
+    },
+    {
+      "id": "systematic-debugging",
+      "description": "遇到任何 bug、测试失败或异常行为时使用，在提出修复方案之前执行",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/systematic-debugging/SKILL.md",
+        "sha256": "f0e3e21f0d815706a6d16a1dd2310b076a54e6f9ddfc501cfb5a334c62bd3fd3"
+      }
+    },
+    {
+      "id": "test-driven-development",
+      "description": "在实现任何功能或修复 bug 时使用，在编写实现代码之前",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/test-driven-development/SKILL.md",
+        "sha256": "701d23255e599cb5ca8a68c5ecb92c601e89ab2311292a4dd6c7a0fec7f74178"
       }
     },
     {
@@ -386,7 +633,7 @@
         "design",
         "frontend"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -395,8 +642,65 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/theme-factory/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/theme-factory/SKILL.md",
         "sha256": "c35893e221e28895c52143cc11bf30e41a44817796b39d4b15727dadc9796552"
+      }
+    },
+    {
+      "id": "using-git-worktrees",
+      "description": "当需要开始与当前工作区隔离的功能开发，或在执行实现计划之前使用——通过原生工具或 git worktree 回退机制确保隔离工作区存在",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/using-git-worktrees/SKILL.md",
+        "sha256": "13ec7407756b0ad5594afae3736af0531899db10e2bcd7a93cc4f5d836c09d4d"
+      }
+    },
+    {
+      "id": "using-superpowers",
+      "description": "在开始任何对话时使用——确立如何查找和使用技能，要求在任何响应（包括澄清性问题）之前调用 Skill 工具",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/using-superpowers/SKILL.md",
+        "sha256": "3da2066e0fe0fe0022f48cc6363b8f0dab1cca5c0ba77d8a387505d0d48ff9ed"
+      }
+    },
+    {
+      "id": "verification-before-completion",
+      "description": "在宣称工作完成、已修复或测试通过之前使用，在提交或创建 PR 之前——必须运行验证命令并确认输出后才能声称成功；始终用证据支撑断言",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/verification-before-completion/SKILL.md",
+        "sha256": "bd976c5f28413d08b3a7dc3026549a6ff43fab4e282b74842a9389cc2034eda4"
       }
     },
     {
@@ -406,7 +710,7 @@
         "web",
         "design"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -415,7 +719,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/web-artifacts-builder/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/web-artifacts-builder/SKILL.md",
         "sha256": "81c5002c6643b0de7b8710b00e7a9038daa6fb9b68d59870ee6adb12da8d10f8"
       }
     },
@@ -426,7 +730,7 @@
         "testing",
         "web"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -435,8 +739,65 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/webapp-testing/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/webapp-testing/SKILL.md",
         "sha256": "51b7349e77ec63b7744a6f63647e7566a0b4d2e301121cc10e8c2113af6556a2"
+      }
+    },
+    {
+      "id": "workflow-runner",
+      "description": "在 Claude Code / OpenClaw / Cursor 中直接运行 agency-orchestrator YAML 工作流——无需 API key，使用当前会话的 LLM 作为执行引擎。当用户提供 .yaml 工作流文件或要求多角色协作完成任务时触发。",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/workflow-runner/SKILL.md",
+        "sha256": "445b25e66a8ab8cd1102e4bebdf8cd616a520b8d78e3684a0ffe6b3a11804e31"
+      }
+    },
+    {
+      "id": "writing-plans",
+      "description": "当你有规格说明或需求用于多步骤任务时使用，在动手写代码之前",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/writing-plans/SKILL.md",
+        "sha256": "ab0692c3515b2460ce18f8bba0ac764f86c3671f4b6bdd16a2387c8965ae0c0a"
+      }
+    },
+    {
+      "id": "writing-skills",
+      "description": "当创建新技能、编辑现有技能或在部署前验证技能是否有效时使用",
+      "categories": [
+        "general"
+      ],
+      "version": "1.4.0",
+      "author": {
+        "name": "jnMetaCode",
+        "url": "https://github.com/jnMetaCode/superpowers-zh"
+      },
+      "origin": "https://github.com/jnMetaCode/superpowers-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/writing-skills/SKILL.md",
+        "sha256": "729d4eebd071d4c5f435abc886b28b1729da3789876a30186ef2751be6a5da2e"
       }
     },
     {
@@ -446,7 +807,7 @@
         "office",
         "spreadsheet"
       ],
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -455,7 +816,7 @@
       "license": "Proprietary. LICENSE.txt has complete terms",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.3.0/skills/xlsx/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.4.0/skills/xlsx/SKILL.md",
         "sha256": "4507dc4a150047fe7dd6045e24324b19db8a89ec62c7254fc162dd36d98312e8"
       }
     }
