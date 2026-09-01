@@ -9,6 +9,6 @@
   },
   "transport": {
     "kind": "https-json",
-    "endpoint": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.0/sources/community/skills-index.json"
+    "endpoint": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/sources/community/skills-index.json"
   }
 }
