@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-01T08:33:46.883Z",
-  "revision": "1.1.0-2026-09-01",
+  "generatedAt": "2026-09-01T10:46:59.457Z",
+  "revision": "1.1.1-2026-09-01",
   "items": [
     {
       "id": "academy-guide",
@@ -10,7 +10,7 @@
         "learning",
         "document"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -19,8 +19,8 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/academy-guide/SKILL.md",
-        "sha256": "8e4491ab87b0b581e14fbc73f300f7bd195407adbb712da6a48e1de1c692374b"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/academy-guide/SKILL.md",
+        "sha256": "6ff2e73e5279add9dc3f8f492460a52ea4ec083651a8b434f071e6632e182bca"
       }
     },
     {
@@ -30,7 +30,7 @@
         "design",
         "creative"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -39,8 +39,8 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/algorithmic-art/SKILL.md",
-        "sha256": "6688fc81bb2051d3f234385b50ce160834eb0b0510ed8a5816cc412c1d28c352"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/algorithmic-art/SKILL.md",
+        "sha256": "3bc4092c09804853186524c826bc0621b940bb6122c05b84496dff95388e6eef"
       }
     },
     {
@@ -50,7 +50,7 @@
         "design",
         "marketing"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -59,8 +59,8 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/brand-guidelines/SKILL.md",
-        "sha256": "a0aa0a21ebf9e8511a045cc234bc839adc2b6706db727add14e9855f242e11a7"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/brand-guidelines/SKILL.md",
+        "sha256": "1120b3769e2985cefb3d25be981b1f914abeba57ae079b83c20c666c164fa9fe"
       }
     },
     {
@@ -70,7 +70,7 @@
         "design",
         "creative"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -79,8 +79,8 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/canvas-design/SKILL.md",
-        "sha256": "7bebc4a2cf108c55c1e52bb96b1050dc1ab2f9492e9c2d43f1fe57f826728f4d"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/canvas-design/SKILL.md",
+        "sha256": "a1f288079624402f30682753c1d43920b6664785698d21d3e7aa197450a6448b"
       }
     },
     {
@@ -90,7 +90,7 @@
         "developer-tools",
         "api"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -99,8 +99,8 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/claude-api/SKILL.md",
-        "sha256": "3687e23fc9e3a7839e44ee9e0d562b5b2cc6c59eb1cdd99ba88fadcf9b25870c"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/claude-api/SKILL.md",
+        "sha256": "f8cade34355421caa6bde3f3ca2bfcab0621c64dcd5fe21f2d97d5cb227adb60"
       }
     },
     {
@@ -110,7 +110,7 @@
         "writing",
         "analysis"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -119,8 +119,8 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/discernment-nudge/SKILL.md",
-        "sha256": "6120ea7d111c2fd3c9c8bd1850b647252d79621e17aad7b17ebf21e07d4b37c3"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/discernment-nudge/SKILL.md",
+        "sha256": "230e6665f4f253544a1be67fa5f5f78e66b36f319db0c3c413516fddc45b3eb9"
       }
     },
     {
@@ -130,7 +130,7 @@
         "office",
         "writing"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -139,8 +139,8 @@
       "license": null,
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/doc-coauthoring/SKILL.md",
-        "sha256": "acb9b89b228fb818ffe2f464e40b1cdbf6948b50ceeeb7378f0e5b9d78c996ad"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/doc-coauthoring/SKILL.md",
+        "sha256": "2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4"
       }
     },
     {
@@ -150,7 +150,7 @@
         "office",
         "document"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -159,8 +159,8 @@
       "license": "Proprietary. LICENSE.txt has complete terms",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/docx/SKILL.md",
-        "sha256": "6f9f3a1436b285cbc8a5eaddc08be7523fa9b30089c945a95e4cd78e33cf391d"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/docx/SKILL.md",
+        "sha256": "5e030c1393a73657a9ea147c53491c63d8121d84cf2cd0c9fda15c70483af9ba"
       }
     },
     {
@@ -170,7 +170,7 @@
         "design",
         "web"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -179,8 +179,8 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/frontend-design/SKILL.md",
-        "sha256": "35c43b9d10c2388dbb228047ad028c989a14033750812125f351c85aa42c7a4a"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/frontend-design/SKILL.md",
+        "sha256": "1608ea77fbb6fc30d13a97d12cfa8ebf31358d40f0dd97beed24829d6b3f45dd"
       }
     },
     {
@@ -190,7 +190,7 @@
         "writing",
         "communication"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -199,8 +199,8 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/internal-comms/SKILL.md",
-        "sha256": "c5c061ab25b33fab2358a9be53a5cc0d528ec7c3e8a29285a041ffc95d0d8947"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/internal-comms/SKILL.md",
+        "sha256": "067b7587a344a928fc6534ef66b1bcd591fc7c26d207ea7ca3334aeb678d6475"
       }
     },
     {
@@ -210,7 +210,7 @@
         "developer-tools",
         "mcp"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -219,8 +219,8 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/mcp-builder/SKILL.md",
-        "sha256": "57231330040e18e033dad8b2fdc0340a6185034c32b42b7d3448f444a6af6cf2"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/mcp-builder/SKILL.md",
+        "sha256": "0f4592dcb53cf2b5d6b7febee6b4152018b565551a1c29e3c612f57b218ab295"
       }
     },
     {
@@ -230,7 +230,7 @@
         "office",
         "document"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -239,8 +239,8 @@
       "license": "Proprietary. LICENSE.txt has complete terms",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/pdf/SKILL.md",
-        "sha256": "067401220db5745f719ff8c048d545d5edc8545e809668a3a6f9e2892fa51d48"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/pdf/SKILL.md",
+        "sha256": "9f78b8359fbd4943ad260a7a1e436e5a96503406d6c34e99f69223d647d85b9c"
       }
     },
     {
@@ -250,7 +250,7 @@
         "office",
         "presentation"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -259,8 +259,8 @@
       "license": "Proprietary. LICENSE.txt has complete terms",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/pptx/SKILL.md",
-        "sha256": "a3638961652ea596d5bd5cdfbadad23ea2afcea2a70de78f602ea5883154603d"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/pptx/SKILL.md",
+        "sha256": "8dd8d7325fd67ab17ad5097f924c8cf2a3d9b21bccbf087c2d770eb86cd7c1fb"
       }
     },
     {
@@ -270,7 +270,7 @@
         "developer-tools",
         "meta"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -279,8 +279,8 @@
       "license": null,
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/skill-creator/SKILL.md",
-        "sha256": "e030e7685e26283b4a76f5202aa3ae8516fb41dde799be5ae8ea6393ec009fe9"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/skill-creator/SKILL.md",
+        "sha256": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf"
       }
     },
     {
@@ -290,7 +290,7 @@
         "creative",
         "communication"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -299,8 +299,8 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/slack-gif-creator/SKILL.md",
-        "sha256": "561c85ffeab639a1e84bb51cfc49f66e868a2a4c4b8945bf77b7bdaeca145a7d"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/slack-gif-creator/SKILL.md",
+        "sha256": "2efca615ce55a3edd8fc05c779068a8085816617991987e446606403cd3abb22"
       }
     },
     {
@@ -310,7 +310,7 @@
         "design",
         "frontend"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -319,8 +319,8 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/theme-factory/SKILL.md",
-        "sha256": "7c765e6626bf61eca30224ceeb0da51ac003c7c2f1c1743ace9b3baa305ea632"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/theme-factory/SKILL.md",
+        "sha256": "c35893e221e28895c52143cc11bf30e41a44817796b39d4b15727dadc9796552"
       }
     },
     {
@@ -330,7 +330,7 @@
         "web",
         "design"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -339,8 +339,8 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/web-artifacts-builder/SKILL.md",
-        "sha256": "fed403699c30a8dfc91b43bc82e76c06a0e935e86395cab943644767878a48d4"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/web-artifacts-builder/SKILL.md",
+        "sha256": "81c5002c6643b0de7b8710b00e7a9038daa6fb9b68d59870ee6adb12da8d10f8"
       }
     },
     {
@@ -350,7 +350,7 @@
         "testing",
         "web"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -359,8 +359,8 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/webapp-testing/SKILL.md",
-        "sha256": "8bc27790f6e6dfc2bfa6692326d4518baacf6a31dcc646d963c729adad2f7e34"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/webapp-testing/SKILL.md",
+        "sha256": "51b7349e77ec63b7744a6f63647e7566a0b4d2e301121cc10e8c2113af6556a2"
       }
     },
     {
@@ -370,7 +370,7 @@
         "office",
         "spreadsheet"
       ],
-      "version": "1.1.0",
+      "version": "1.1.1",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -379,8 +379,8 @@
       "license": "Proprietary. LICENSE.txt has complete terms",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/xlsx/SKILL.md",
-        "sha256": "84895d7602f41abd14cba876f9b6f03168e452be825eefa668d26bb8a7150411"
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.1/skills/xlsx/SKILL.md",
+        "sha256": "4507dc4a150047fe7dd6045e24324b19db8a89ec62c7254fc162dd36d98312e8"
       }
     }
   ]

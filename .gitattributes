@@ -1,0 +1,11 @@
+# 强制 LF 行尾：杜绝 git core.autocrlf 在提交时规范化行尾，
+# 导致 jsDelivr 返回的字节与本地 sha256 索引漂移（2026-09-01 xlsx SHA-256 事故）。
+* text=auto eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.mjs text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.png binary
+*.jpg binary
+*.gif binary

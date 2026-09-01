@@ -6,6 +6,11 @@ node_modules/
 *.negtest*
 scripts/*.tmp*
 
+# Atomic-write temp dirs (editor/atomic save residue): .name.PID.UUID.tmpdir/
+.*.tmpdir/
+*.tmpdir/
+.*.tmp
+
 # Editor
 .vscode/
 .idea/
