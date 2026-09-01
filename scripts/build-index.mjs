@@ -1,23 +1,24 @@
-// Build manifest.json + skills-index.json from the ./skills/ vendor directory.
+// Build manifest.json + skills-index.json for ONE source.
 // Zero-dependency; Node 18+ (fs, crypto, url).
-// Usage: node scripts/build-index.mjs [version]
-//   version defaults to package.json "version" (semver x.y.z).
-// Generated URLs point to jsDelivr CDN:
-//   https://cdn.jsdelivr.net/gh/<owner>/<repo>@v<version>/...
-// which keeps manifest, index and downloads on the SAME origin
-// (DSH market contract v1 requirement).
-import { readFileSync, readdirSync, writeFileSync, existsSync } from "node:fs";
+// Usage: node scripts/build-index.mjs [source] [version]
+//   source  : "official"（默认，根目录，向后兼容）或 "community" 等附加源（sources/<name>/）
+//   version : 默认取 package.json "version"（semver x.y.z）
+// Generated URLs point to jsDelivr CDN (same-origin per DSH market contract v1):
+//   https://cdn.jsdelivr.net/gh/<owner>/<repo>@v<version>/<rel>/...
+// 多源设计：一个仓库承载多个独立目录源，每个源各有 manifest+index（独立 900KiB 配额）。
+import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateSkillFile } from "./lib/skillmd.mjs";
+import { resolveSource, cdnBase } from "./lib/sources.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const hubRoot = path.resolve(here, "..");
-const skillsRoot = path.join(hubRoot, "skills");
 
 const pkg = JSON.parse(readFileSync(path.join(hubRoot, "package.json"), "utf8"));
-const version = process.argv[2] || pkg.version;
+const src = resolveSource(process.argv[2], hubRoot);
+const version = process.argv[3] || pkg.version;
 if (!/^\d+\.\d+\.\d+$/.test(version)) {
   console.error("version must be semver x.y.z (got: " + version + ")");
   process.exit(1);
@@ -27,7 +28,7 @@ if (!hub || !hub.owner || !hub.repo) {
   console.error('package.json "dshHub" must contain owner + repo');
   process.exit(1);
 }
-const base = "https://cdn.jsdelivr.net/gh/" + hub.owner + "/" + hub.repo + "@v" + version;
+const base = cdnBase(pkg, version, src);
 
 // Manual category assignment; unknown skills fall back to ["general"].
 const CATEGORIES = {
@@ -63,6 +64,11 @@ function authorOf(origin) {
 
 const now = new Date().toISOString();
 const items = [];
+const skillsRoot = src.skillsDir;
+if (!existsSync(skillsRoot)) {
+  console.error("源目录不存在：" + skillsRoot);
+  process.exit(1);
+}
 for (const dir of readdirSync(skillsRoot).sort()) {
   const skillFile = path.join(skillsRoot, dir, "SKILL.md");
   if (!existsSync(skillFile)) continue;
@@ -72,16 +78,16 @@ for (const dir of readdirSync(skillsRoot).sort()) {
     console.error("skip invalid vendored skill " + dir + ": " + v.reason);
     continue;
   }
-  const src = JSON.parse(readFileSync(path.join(skillsRoot, dir, "_source.json"), "utf8"));
+  const meta = JSON.parse(readFileSync(path.join(skillsRoot, dir, "_source.json"), "utf8"));
   const sha256 = createHash("sha256").update(content, "utf8").digest("hex");
   items.push({
     id: dir,
     description: v.fm.description,
     categories: CATEGORIES[dir] || ["general"],
     version: pkg.version,
-    author: authorOf(src.origin || "https://github.com"),
-    origin: src.origin || null,
-    license: src.license || null,
+    author: authorOf(meta.origin || "https://github.com"),
+    origin: meta.origin || null,
+    license: meta.license || null,
     updatedAt: now.slice(0, 10),
     download: { url: base + "/skills/" + dir + "/SKILL.md", sha256 }
   });
@@ -93,8 +99,8 @@ if (items.length === 0) {
 
 const manifest = {
   manifestVersion: "1.0.0",
-  providerId: "dsh-skills-hub",
-  name: "DSH Skills Hub",
+  providerId: "dsh-skills-hub-" + src.name,
+  name: "DSH Skills Hub" + (src.name === "official" ? "" : " (" + src.name + ")"),
   description: "Open-source skills catalog for DeepSeek Harness (dsh-skills-manager market source)",
   attribution: { name: hub.owner, url: "https://github.com/" + hub.owner + "/" + hub.repo },
   transport: { kind: "https-json", endpoint: base + "/skills-index.json" }
@@ -107,7 +113,8 @@ const index = {
   items
 };
 
-writeFileSync(path.join(hubRoot, "manifest.json"), JSON.stringify(manifest, null, 2) + "\n", "utf8");
-writeFileSync(path.join(hubRoot, "skills-index.json"), JSON.stringify(index, null, 2) + "\n", "utf8");
-console.log("manifest.json      -> " + manifest.transport.endpoint);
-console.log("skills-index.json  -> " + items.length + " items (" + index.revision + ")");
+mkdirSync(src.dir, { recursive: true });
+writeFileSync(src.manifestFile, JSON.stringify(manifest, null, 2) + "\n", "utf8");
+writeFileSync(src.indexFile, JSON.stringify(index, null, 2) + "\n", "utf8");
+console.log("[" + src.name + "] manifest.json      -> " + manifest.transport.endpoint);
+console.log("[" + src.name + "] skills-index.json  -> " + items.length + " items (" + index.revision + ")");

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-09-01T11:35:33.624Z",
+  "revision": "1.2.0-2026-09-01",
+  "items": [
+    {
+      "id": "code-review",
+      "description": "系统化代码审查：按缺陷/安全/性能/可维护性/风格分级输出问题清单，每条给出位置、根因与修改建议",
+      "categories": [
+        "general"
+      ],
+      "version": "1.2.0",
+      "author": {
+        "name": "luomious",
+        "url": "https://github.com/luomious/dsh-skill-catalog"
+      },
+      "origin": "https://github.com/luomious/dsh-skill-catalog",
+      "license": null,
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.2.0/sources/community/skills/code-review/SKILL.md",
+        "sha256": "79820bb0b79b1999b1a43db5809c0c528ba8e2df58551cd3b8ff907be8992cf3"
+      }
+    },
+    {
+      "id": "git-commit-message",
+      "description": "按 Conventional Commits 规范编写 git 提交信息：类型/范围/主题/正文/脚注，中英皆可，附示例",
+      "categories": [
+        "general"
+      ],
+      "version": "1.2.0",
+      "author": {
+        "name": "luomious",
+        "url": "https://github.com/luomious/dsh-skill-catalog"
+      },
+      "origin": "https://github.com/luomious/dsh-skill-catalog",
+      "license": null,
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.2.0/sources/community/skills/git-commit-message/SKILL.md",
+        "sha256": "cd2bd537c111ef057804c5c060492484e895aa310b18fe7c31c53f91983354ab"
+      }
+    },
+    {
+      "id": "log-analysis",
+      "description": "分析日志文件/日志片段：时间线还原、异常聚类、根因定位，输出结构化排查报告",
+      "categories": [
+        "general"
+      ],
+      "version": "1.2.0",
+      "author": {
+        "name": "luomious",
+        "url": "https://github.com/luomious/dsh-skill-catalog"
+      },
+      "origin": "https://github.com/luomious/dsh-skill-catalog",
+      "license": null,
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.2.0/sources/community/skills/log-analysis/SKILL.md",
+        "sha256": "375ea6218bbd19f609820e0272b0c92efc88ed68a4e259b2bb58efdb7b1486e8"
+      }
+    },
+    {
+      "id": "paper-summary",
+      "description": "快速精读学术论文：动机/方法/实验/局限四段式总结，附关键数据与术语解释，保留原文出处",
+      "categories": [
+        "general"
+      ],
+      "version": "1.2.0",
+      "author": {
+        "name": "luomious",
+        "url": "https://github.com/luomious/dsh-skill-catalog"
+      },
+      "origin": "https://github.com/luomious/dsh-skill-catalog",
+      "license": null,
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.2.0/sources/community/skills/paper-summary/SKILL.md",
+        "sha256": "5a98bb0b1ec4c25db15630071672dda087f44c64249525844b82487aa1dcf860"
+      }
+    }
+  ]
+}

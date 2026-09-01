@@ -10,9 +10,11 @@ import { createHash } from "node:crypto";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateSkillFile } from "./lib/skillmd.mjs";
+import { resolveSource } from "./lib/sources.mjs";
 
 const hubRoot = dirname(dirname(fileURLToPath(import.meta.url)));
-const skillsRoot = join(hubRoot, "skills");
+const src = resolveSource(process.argv[2], hubRoot);
+const skillsRoot = src.skillsDir;
 
 const GARBAGE = new Set([">", "|-", "|", ">-"]);
 let fail = 0, total = 0;

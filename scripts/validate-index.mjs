@@ -1,14 +1,17 @@
-// Validate generated manifest.json + skills-index.json against the DSH market contract v1,
-// including offline sha256 verification against the vendored files.
-// Usage: node scripts/validate-index.mjs
+// Validate generated manifest.json + skills-index.json for ONE source against the DSH market
+// contract v1, including offline sha256 verification against the vendored files.
+// Usage: node scripts/validate-index.mjs [source]
+//   source : "official"（默认，根目录）或 "community" 等（sources/<name>/）
 import { readFileSync, existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 import { validateSkillFile } from "./lib/skillmd.mjs";
+import { resolveSource } from "./lib/sources.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const hubRoot = path.resolve(here, "..");
+const src = resolveSource(process.argv[2], hubRoot);
 
 const ID_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const VERSION_RE = /^\d+\.\d+\.\d+$/;
@@ -17,8 +20,8 @@ const CATEGORY_RE = /^[a-z0-9-]{1,32}$/;
 
 function fail(msg) { console.error("VALIDATION FAILED: " + msg); process.exitCode = 1; }
 
-const manifest = JSON.parse(readFileSync(path.join(hubRoot, "manifest.json"), "utf8"));
-const index = JSON.parse(readFileSync(path.join(hubRoot, "skills-index.json"), "utf8"));
+const manifest = JSON.parse(readFileSync(src.manifestFile, "utf8"));
+const index = JSON.parse(readFileSync(src.indexFile, "utf8"));
 
 // --- manifest ---
 if (manifest.manifestVersion !== "1.0.0") fail("manifestVersion");
@@ -63,7 +66,7 @@ for (const it of index.items) {
   if (dUrl.origin !== ep.origin) fail("download origin mismatch " + id);
 
   // offline sha256 check against vendored file
-  const local = path.join(hubRoot, "skills", id, "SKILL.md");
+  const local = path.join(src.skillsDir, id, "SKILL.md");
   if (!existsSync(local)) { fail("missing local file " + local); continue; }
   const actual = createHash("sha256").update(readFileSync(local, "utf8"), "utf8").digest("hex");
   if (actual !== dl.sha256) fail("sha256 mismatch " + id);

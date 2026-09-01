@@ -1,61 +1,58 @@
 # dsh-skills-hub 发布检查清单（PUBLISH.md）
 
-> 生成：2026-09-01　目标仓库：`github.com/luomious/dsh-skills-hub`（独立仓库，jsDelivr 分发）
-> 前置：**本机 git 走代理 `127.0.0.1:7897` 时 GitHub TLS 失败**（curl 000），发布前需确保网络可 push（开 Clash TUN / 换可用节点 / 或临时关闭代理直连）。
+> 更新：2026-09-01　目标仓库：`github.com/luomious/dsh-skills-hub`（独立仓库，jsDelivr 分发）
+> 版本：v1.2.0（多源架构：official 19 官方技能 + community 社区技能）
 
 ## 本地已就绪（无需网络，均已验证）
 
-- [x] `package.json`：`dshHub.owner = luomious`，`version = 1.1.0`
-- [x] 19 个官方技能 vendor 完成，描述全部修复为干净单行（≤500、非垃圾、弯引号）
-- [x] `npm test` 全绿：verify-parser（19/19 健康描述）+ test-rewrite（块标量/内联截断）+ validate-index（契约 v1 + 离线 sha256 + 交叉校验）
-- [x] `npm run build && npm run validate` → `VALIDATION OK: 19 items`
-- [x] 官方 dsh-skills-manager 校验器交叉验收：`OFFICIAL FINAL PASS 19/19`（含 sha256 比对）
-- [x] 负向测试通过：篡改 description 为 `">"` 时 validate 拒绝（垃圾描述防御 + 交叉校验双保险）
+- [x] `package.json`：`dshHub.owner = luomious`，`version = 1.2.0`
+- [x] 多源管线：`official`（根，19 官方）+ `community`（sources/community/，4 种子）各自独立 manifest/index/900KiB 配额
+- [x] `npm test` 全绿：verify-parser（全源健康描述）+ test-rewrite（截断重写）+ validate-index（契约 v1 + sha256 + 交叉校验）
+- [x] `npm run build:all && npm run validate:all` → 两源均 `VALIDATION OK`
+- [x] 负向测试通过：篡改 description 为 `">"` 时 validate 拒绝
 
-## 发布步骤（需网络，网络通畅后逐条执行）
+## 发布步骤（需网络，SSH 通道已验证可用）
 
 ```bash
-# 1) 在 GitHub 新建独立空仓库 luomious/dsh-skills-hub（不要勾选 README/.gitignore）
-
-# 2) 在本地 dsh-skills-hub 目录初始化并推送
 cd D:\Deepseek-Harness\tools\dsh-skills-hub
-git init
-git add -A
-git commit -m "feat(skills): vendor 19 official anthropics skills (v1.1.0)"
-git branch -M main
-git remote add origin https://github.com/luomious/dsh-skills-hub.git
-git push -u origin main
-
-# 3) 打 tag（tag 名必须与 package.json version 一致；jsDelivr 按 tag 永久缓存）
-git tag v1.1.0
-git push origin v1.1.0
-
-# 4) 验证 jsDelivr 已生效（等 1-2 分钟 CDN 预热）
-curl -I https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/manifest.json
-curl -s https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills-index.json | head
+npm test && npm run build:all && npm run validate:all   # 发布前必须全绿
+git add -A && git commit -m "feat(skills): multi-source hub v1.2.0 (official+community)"
+git tag v1.2.0
+git push origin main v1.2.0
+# 验证 jsDelivr（等 1-2 分钟 CDN 预热）
+curl -I https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.2.0/manifest.json
+curl -I https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.2.0/sources/community/manifest.json
 ```
 
-## 在 DSH 中使用（Web GUI）
+## 在 DSH 中使用（多源，Web GUI）
 
 1. 打开 http://127.0.0.1:43120 → 设置 → **Skills** → **市场**
-2. 「添加目录源（manifest URL）」粘贴：
-   ```
-   https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/manifest.json
-   ```
-3. 选中该源 → 浏览 / 搜索 / 分类 / 一键安装（DSH 二次校验：SHA-256 + frontmatter + 路径白名单）
+2. 「添加目录源」各加一个 URL：
+   - official：`https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.2.0/manifest.json`
+   - community：`https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.2.0/sources/community/manifest.json`
+3. 选中某源 → 浏览/搜索/分类/安装（SHA-256 强校验 + 原子安装）
+
+## 扩充社区源（可迭代）
+
+```bash
+cd D:\Deepseek-Harness\tools\dsh-skills-hub
+npm run upgrade -- community https://github.com/<MIT上游>/<skills仓库>.git
+npm test && npm run build:all && npm run validate:all
+# bump version → commit → tag v1.3.0 → push --tags
+```
 
 ## 后续迭代（新增 skill / 上游更新）
 
 ```bash
 git -c http.sslBackend=openssl clone --depth 1 https://github.com/anthropics/skills.git /tmp/upstream
 cd D:\Deepseek-Harness\tools\dsh-skills-hub
-npm run import -- /tmp/upstream https://github.com/anthropics/skills   # 契约校验 + 描述自动截断/清洗
-npm test && npm run build && npm run validate                          # 全绿才可发布
+npm run import -- /tmp/upstream https://github.com/anthropics/skills official   # 契约校验 + 描述自动截断/清洗
+npm test && npm run build:all && npm run validate:all                          # 全绿才可发布
 # bump package.json version → commit → git tag vX.Y.Z → push --tags
 ```
 
 ## 风险与回滚
 
-- **jsDelivr 对 tag 永久缓存**：一旦发布，内容不可变；改坏只能发新 tag。因此发布前 `npm test && npm run build` 必须全绿（本清单已前置保证）。
-- **本地改动全部可回滚**：`tools/dsh-skills-hub/` 尚未纳入任何 git 仓库（工作区 `tools/` 被忽略），发布前可随时 `git diff` 检视。
-- **方案 A 副本独立**：`~/.dsh/skills/` 下的 19 个技能是独立副本，删除该目录即回滚 A，不影响市场源 B。
+- **jsDelivr 对 tag 永久缓存**：一旦发布，内容不可变；改坏只能发新 tag。因此发布前 `npm test && npm run build:all` 必须全绿（本清单已前置保证）。
+- **本地改动全部可回滚**：`tools/dsh-skills-hub/` 是独立 git 仓库（嵌套于工作区 `tools/`，主仓忽略该目录），发布前可随时 `git diff` / `git reset` 检视回退。
+- **本地快照（方案 A）独立**：`~/.agents/skills/` 下的技能副本独立于市场源，删除即回滚 A，不影响市场源 B。

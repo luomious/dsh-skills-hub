@@ -1,23 +1,25 @@
-// Import validated SKILL.md files from an upstream repo checkout into ./skills/.
-// Usage: node scripts/import-upstream.mjs <upstream-root> <origin-url>
+// Import validated SKILL.md files from an upstream repo checkout into a target source's skills/.
+// Usage: node scripts/import-upstream.mjs <upstream-root> <origin-url> [source]
 //   <upstream-root> : local checkout (e.g. git clone) containing skills/<name>/SKILL.md
 //   <origin-url>    : upstream repo URL, recorded into _source.json and used as author link
+//   [source]        : 目标源（默认 official=根目录；community 等= sources/<name>/）
 // Only skills whose frontmatter name matches the directory (kebab-case) and that have
 // a non-empty description are imported (DSH market contract v1 rules).
 import { readdirSync, readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateSkillFile, parseFrontmatter, ID_RE, shortenDescription, rewriteDescription } from "./lib/skillmd.mjs";
+import { resolveSource } from "./lib/sources.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const hubRoot = path.resolve(here, "..");
-const destRoot = path.join(hubRoot, "skills");
-
-const [upstreamRoot, originUrl] = process.argv.slice(2);
+const [upstreamRoot, originUrl, sourceArg] = process.argv.slice(2);
 if (!upstreamRoot || !originUrl) {
-  console.error("Usage: node scripts/import-upstream.mjs <upstream-root> <origin-url>");
+  console.error("Usage: node scripts/import-upstream.mjs <upstream-root> <origin-url> [source]");
   process.exit(1);
 }
+const src = resolveSource(sourceArg, hubRoot);
+const destRoot = src.skillsDir;
 
 const skillsDir = path.join(upstreamRoot, "skills");
 if (!existsSync(skillsDir)) {
@@ -53,5 +55,5 @@ for (const dir of readdirSync(skillsDir).sort()) {
   }, null, 2) + "\n", "utf8");
   imported++;
 }
-console.log("imported: " + imported);
-if (skipped.length > 0) console.log("skipped:\n  " + skipped.join("\n  "));
+console.log("[" + src.name + "] imported: " + imported);
+if (skipped.length > 0) console.log("[" + src.name + "] skipped:\n  " + skipped.join("\n  "));

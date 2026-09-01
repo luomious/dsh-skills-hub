@@ -1,7 +1,7 @@
 {
   "manifestVersion": "1.0.0",
-  "providerId": "dsh-skills-hub-official",
-  "name": "DSH Skills Hub",
+  "providerId": "dsh-skills-hub-community",
+  "name": "DSH Skills Hub (community)",
   "description": "Open-source skills catalog for DeepSeek Harness (dsh-skills-manager market source)",
   "attribution": {
     "name": "luomious",
@@ -9,6 +9,6 @@
   },
   "transport": {
     "kind": "https-json",
-    "endpoint": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.2.0/skills-index.json"
+    "endpoint": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.2.0/sources/community/skills-index.json"
   }
 }

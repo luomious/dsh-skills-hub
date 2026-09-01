@@ -1,15 +1,19 @@
 {
   "name": "dsh-skills-hub",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "private": true,
   "type": "module",
-  "description": "DSH Skills Hub - open-source skills catalog for DeepSeek Harness (market source for dsh-skills-manager). Vendors official SKILL.md files and serves a contract-compliant jsDelivr catalog.",
+  "description": "DSH Skills Hub - multi-source open-source skills catalog for DeepSeek Harness (market source for dsh-skills-manager). One GitHub repo, many independent catalog sources (each with its own manifest+index and 900KiB quota).",
   "scripts": {
-    "test": "node scripts/verify-parser.mjs && node scripts/test-rewrite.mjs && node scripts/validate-index.mjs",
+    "test": "node scripts/test-rewrite.mjs && node scripts/all-sources.mjs verify-parser && node scripts/all-sources.mjs validate-index",
+    "test:official": "node scripts/test-rewrite.mjs && node scripts/verify-parser.mjs && node scripts/validate-index.mjs",
     "build": "node scripts/build-index.mjs && node scripts/validate-index.mjs",
+    "build:all": "node scripts/all-sources.mjs build-index && node scripts/all-sources.mjs validate-index",
     "import": "node scripts/import-upstream.mjs",
     "validate": "node scripts/validate-index.mjs",
-    "upgrade": "node scripts/upgrade.mjs"
+    "validate:all": "node scripts/all-sources.mjs validate-index",
+    "upgrade": "node scripts/upgrade.mjs",
+    "eol": "node scripts/normalize-eol.mjs"
   },
   "dshHub": {
     "owner": "luomious",

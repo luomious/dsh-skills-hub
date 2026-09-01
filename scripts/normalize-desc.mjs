@@ -7,14 +7,16 @@
 // Idempotent by convergence: rewrite is applied repeatedly until the bytes stop
 // changing (each pass only removes residue, never adds), so a clean file is
 // reported untouched and a once-mangled file converges to the stable form.
-// Run: node scripts/normalize-desc.mjs
+// Run: node scripts/normalize-desc.mjs [source]
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseFrontmatter, collapseDescription, rewriteDescription } from "./lib/skillmd.mjs";
+import { resolveSource } from "./lib/sources.mjs";
 
-const hubRoot = dirname(dirname(fileURLToPath(import.meta.url)));
-const skillsRoot = join(hubRoot, "skills");
+const here = dirname(dirname(fileURLToPath(import.meta.url)));
+const src = resolveSource(process.argv[2], here);
+const skillsRoot = src.skillsDir;
 const MAX_PASSES = 6;
 
 let changed = 0, untouched = 0;

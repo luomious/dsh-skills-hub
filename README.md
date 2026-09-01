@@ -9,11 +9,12 @@
 DSH Desktop 自带 `dsh-skills-manager` 插件，其「市场」页已实现：目录源管理、搜索/分类、安装/更新/卸载、SHA-256 强校验、原子安装。
 但市场需要一个**符合契约的目录源**（manifest + 索引 + 下载文件必须同源 HTTPS）。
 
-本仓库就是这样一个目录源：
+本仓库就是这样一个目录源，且采用**一个仓库、多个独立源**的大型库架构：
 
+- **多源设计（2026-09-01 v1.2.0）**：`official`（根目录，19 个 anthropics 官方技能，向后兼容 v1.1.x）+ `community`（`sources/community/`，社区技能）。每个源**独立 manifest + 索引 + 900KiB 配额**（DSH 契约 v1 单源上限），共同承载可扩展的「大型库」——新增源只需 `mkdir sources/<name>` + 一条命令。
 - 通过 **jsDelivr CDN** 托管（`cdn.jsdelivr.net/gh/<owner>/<repo>@v<version>/...`），manifest / 索引 / 下载全部同源，且国内可访问；
 - skill 文件 **vendor 快照**进本仓库（sha256 固定、内容不可变，安装校验 100% 可复现）；
-- 构建产物由零依赖 Node 脚本生成并**自动校验**，重新发布只需一条命令。
+- 构建产物由零依赖 Node 脚本生成并**自动校验**（多源参数化：`node scripts/build-index.mjs <source>`），重新发布只需一条命令。
 
 ## 快速开始（发布到 GitHub）
 
@@ -21,42 +22,49 @@ DSH Desktop 自带 `dsh-skills-manager` 插件，其「市场」页已实现：�
 2. 本目录即独立 git 仓库形态；先在本地跑完整验证：
 
    ```bash
-   npm test                  # 回归测试 + 契约校验（必须全绿）
-   npm run build             # 重新生成 manifest + skills-index
-   npm run validate          # 复校验，必须输出 VALIDATION OK
+   npm test                  # 回归测试 + 全源契约校验（必须全绿）
+   npm run build:all         # 重建全部源（official + community）的 manifest + index
+   npm run validate:all      # 复校验，必须输出 VALIDATION OK
    ```
 
 3. 提交并打 tag（tag 名必须与 `package.json` 的 `version` 一致）：
 
    ```bash
-   git add -A && git commit -m "v1.1.0"
-   git tag v1.1.0
+   git add -A && git commit -m "v1.2.0"
+   git tag v1.2.0
    git push origin main --tags
    ```
 
-> ⚠️ jsDelivr 对 tag 内容永久缓存，版本不可变；改坏只能发新 tag，所以**发布前 `npm run build && npm test` 必须全绿**。
+> ⚠️ jsDelivr 对 tag 内容永久缓存，版本不可变；改坏只能发新 tag，所以**发布前 `npm test && npm run build:all` 必须全绿**。
 
-## 在 DSH 中使用
+## 在 DSH 中使用（多源）
 
 1. 打开 DSH Web GUI（http://127.0.0.1:43120）→ 设置 → **Skills** → **市场** 页；
-2. 在「添加目录源（manifest URL）」粘贴：
+2. 「添加目录源（manifest URL）」——每个源一个 URL，可全部添加、各自选中：
 
    ```
-   https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/manifest.json
+   # official（19 个官方技能）
+   https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.2.0/manifest.json
+
+   # community（社区技能）
+   https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.2.0/sources/community/manifest.json
    ```
 
-3. 添加后选中该源 → 即可浏览 / 搜索 / 分类 / 一键安装（SHA-256 强校验 + 原子安装）。
+3. 添加后选中某源 → 即可浏览 / 搜索 / 分类 / 一键安装（SHA-256 强校验 + 原子安装）。
 
 ## 目录结构
 
 ```
-skills/                       # vendor 的 skill 快照（每个目录一份 SKILL.md + _source.json）
+skills/                       # official 源：vendor 的 skill 快照（每个目录一份 SKILL.md + _source.json）
   docx/SKILL.md
   docx/_source.json           # 来源 / 许可 / 是否截断描述（审计用）
+sources/community/            # community 源（多源架构：每源独立 manifest/index/技能目录）
+  manifest.json + skills-index.json + skills/<name>/SKILL.md
 scripts/
-  import-upstream.mjs         # 从上游仓库 clone 目录导入 skill（含契约校验）
-  build-index.mjs             # 扫描 skills/ → 生成 manifest.json + skills-index.json
+  import-upstream.mjs         # 从上游仓库 clone 目录导入 skill 到指定源（含契约校验）
+  build-index.mjs             # 扫描某源 skills/ → 生成 manifest.json + skills-index.json
   validate-index.mjs          # 复刻 DSH 市场契约 v1 校验（含离线 sha256 复核）
+  all-sources.mjs             # 对全部源逐个执行子命令（build/validate/verify-parser）
   verify-parser.mjs           # 回归测试：frontmatter 解析器对每个 vendor 技能产出健康单行描述
   test-rewrite.mjs            # 回归测试：description 截断重写对块标量/内联都正确
   lib/skillmd.mjs             # 共享 frontmatter 解析/校验/折叠/重写（单一事实源）
