@@ -1,6 +1,6 @@
 {
   "name": "dsh-skills-hub",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "private": true,
   "type": "module",
   "description": "DSH Skills Hub - multi-source open-source skills catalog for DeepSeek Harness (market source for dsh-skills-manager). One GitHub repo, many independent catalog sources (each with its own manifest+index and 900KiB quota).",

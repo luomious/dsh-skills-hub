@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-01T12:21:47.975Z",
-  "revision": "1.5.1-2026-09-01",
+  "generatedAt": "2026-09-01T14:02:39.819Z",
+  "revision": "1.6.0-2026-09-01",
   "items": [
     {
       "id": "academy-guide",
@@ -10,7 +10,7 @@
         "learning",
         "document"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -19,7 +19,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/academy-guide/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/academy-guide/SKILL.md",
         "sha256": "6ff2e73e5279add9dc3f8f492460a52ea4ec083651a8b434f071e6632e182bca"
       }
     },
@@ -30,7 +30,7 @@
         "design",
         "creative"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -39,8 +39,28 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/algorithmic-art/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/algorithmic-art/SKILL.md",
         "sha256": "3bc4092c09804853186524c826bc0621b940bb6122c05b84496dff95388e6eef"
+      }
+    },
+    {
+      "id": "api-tester",
+      "description": "依据真实 OpenAPI、路由实现和现有测试生成并验证 API 测试。用于用户要求测试接口、补集成测试、验证 API 契约、生成回归用例或排查接口兼容性时；区分“生成测试”和“执行请求”的授权，不猜测状态码、响应结构或 SLA，不在未确认环境中发送写请求。",
+      "categories": [
+        "developer-tools",
+        "testing"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/api-tester/SKILL.md",
+        "sha256": "b1f537163db791526bda2f79bba0bb4c09a35f78cc24ed4b062e46de09a4804c"
       }
     },
     {
@@ -49,7 +69,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -58,7 +78,7 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/brainstorming/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/brainstorming/SKILL.md",
         "sha256": "91e11cf6de77ae183a7fb7b2046e2e71181af537c3ca79a42fc6c37cf6bdc64c"
       }
     },
@@ -69,7 +89,7 @@
         "design",
         "marketing"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -78,7 +98,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/brand-guidelines/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/brand-guidelines/SKILL.md",
         "sha256": "1120b3769e2985cefb3d25be981b1f914abeba57ae079b83c20c666c164fa9fe"
       }
     },
@@ -89,7 +109,7 @@
         "design",
         "creative"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -98,8 +118,28 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/canvas-design/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/canvas-design/SKILL.md",
         "sha256": "a1f288079624402f30682753c1d43920b6664785698d21d3e7aa197450a6448b"
+      }
+    },
+    {
+      "id": "changelog-gen",
+      "description": "Changelog 生成器 - 从 Git 历史自动生成 CHANGELOG",
+      "categories": [
+        "developer-tools",
+        "git"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/changelog-gen/SKILL.md",
+        "sha256": "456e7da97e273ae475ad1f0f99aaf7b724497abe85323b599f91b01ca97498d5"
       }
     },
     {
@@ -108,7 +148,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -117,7 +157,7 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/chinese-code-review/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/chinese-code-review/SKILL.md",
         "sha256": "51326bc6e097ff69251b36335c31c768ba0dc8ca8204d2c81b8a4826ffab0682"
       }
     },
@@ -127,7 +167,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -136,7 +176,7 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/chinese-commit-conventions/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/chinese-commit-conventions/SKILL.md",
         "sha256": "64dad78d77bb872394322f79b580078eea1739bed01111894ffffbfdec492e4f"
       }
     },
@@ -146,7 +186,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -155,7 +195,7 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/chinese-documentation/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/chinese-documentation/SKILL.md",
         "sha256": "58323397177b6343bd3234f9e4acd8891d58f08cf8076b26fd98296308203a0a"
       }
     },
@@ -165,7 +205,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -174,7 +214,7 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/chinese-git-workflow/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/chinese-git-workflow/SKILL.md",
         "sha256": "e428dc6f0c3883941e15598db5f5d9ec066a3d3528cbbd565d98273aad900aa1"
       }
     },
@@ -185,7 +225,7 @@
         "developer-tools",
         "api"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -194,7 +234,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/claude-api/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/claude-api/SKILL.md",
         "sha256": "f8cade34355421caa6bde3f3ca2bfcab0621c64dcd5fe21f2d97d5cb227adb60"
       }
     },
@@ -204,7 +244,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "luomious",
         "url": "https://github.com/luomious/dsh-skill-catalog"
@@ -213,8 +253,48 @@
       "license": null,
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/code-review/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/code-review/SKILL.md",
         "sha256": "79820bb0b79b1999b1a43db5809c0c528ba8e2df58551cd3b8ff907be8992cf3"
+      }
+    },
+    {
+      "id": "db-migrator",
+      "description": "数据库迁移助手 - Schema 对比、迁移脚本生成",
+      "categories": [
+        "developer-tools",
+        "database"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/db-migrator/SKILL.md",
+        "sha256": "81a40b4d2bb5df80d9383fb86e6ac1cff757aec5a5055225f16fcc77af0ecf87"
+      }
+    },
+    {
+      "id": "dep-auditor",
+      "description": "审计 Node.js、Python、Go、Rust、JVM、Ruby 项目的依赖漏洞、版本健康度与许可证事实；当用户要求检查 package.json、lockfile、requirements、go.mod、Cargo.toml、pom.xml、Gemfile.lock，或生成不改依赖的中文审计报告时使用",
+      "categories": [
+        "developer-tools",
+        "security"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/dep-auditor/SKILL.md",
+        "sha256": "5e597e50daf5cce7d3fa5464d12e26979bc734d209b17fd4fdb39418db0d8ae0"
       }
     },
     {
@@ -224,7 +304,7 @@
         "writing",
         "analysis"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -233,7 +313,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/discernment-nudge/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/discernment-nudge/SKILL.md",
         "sha256": "230e6665f4f253544a1be67fa5f5f78e66b36f319db0c3c413516fddc45b3eb9"
       }
     },
@@ -243,7 +323,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -252,7 +332,7 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/dispatching-parallel-agents/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/dispatching-parallel-agents/SKILL.md",
         "sha256": "5aa29e0838943f26b46e09e9e49b69f9f3580af5ebaeb7a2d87533dadf0295b2"
       }
     },
@@ -263,7 +343,7 @@
         "office",
         "writing"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -272,7 +352,7 @@
       "license": null,
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/doc-coauthoring/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/doc-coauthoring/SKILL.md",
         "sha256": "2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4"
       }
     },
@@ -283,7 +363,7 @@
         "office",
         "document"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -292,8 +372,88 @@
       "license": "Proprietary. LICENSE.txt has complete terms",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/docx/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/docx/SKILL.md",
         "sha256": "5e030c1393a73657a9ea147c53491c63d8121d84cf2cd0c9fda15c70483af9ba"
+      }
+    },
+    {
+      "id": "ds-mapper",
+      "description": "项目目录结构地图 - 生成带说明的可视化目录树，快速理解任意代码库",
+      "categories": [
+        "developer-tools",
+        "documentation"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/ds-mapper/SKILL.md",
+        "sha256": "0daac0e7addddb7e1856407a5f79ab883fb5cda7e9212a682a294416cdf9eec9"
+      }
+    },
+    {
+      "id": "env-manager",
+      "description": "环境变量管理器：扫描、校验、同步 .env 文件，生成安全配置模板",
+      "categories": [
+        "developer-tools",
+        "config"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/env-manager/SKILL.md",
+        "sha256": "b021d459cd291dc9c1d48b9d739892668b8db4bc205caf564ce7cc2478897268"
+      }
+    },
+    {
+      "id": "error-translator",
+      "description": "编程错误消息翻译专家 — 将英文错误消息翻译成中文，解释原因并提供修复方案",
+      "categories": [
+        "developer-tools",
+        "nls"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/error-translator/SKILL.md",
+        "sha256": "28aff505617ac4b5fd7c847ff436dcb0a0c4f2b2f4916b4e7c9d1042bdade262"
+      }
+    },
+    {
+      "id": "eslint-fix",
+      "description": "安全诊断并修复 ESLint error、warning 和配置兼容问题。用于用户要求运行 lint、解释 ESLint 报错、限定范围自动修复或迁移 ESLint 配置时；优先使用项目锁定的包管理器与版本，先预检再修改，不自动下载最新版或批量改写无关源码。",
+      "categories": [
+        "developer-tools",
+        "linting"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/eslint-fix/SKILL.md",
+        "sha256": "1d24d36682088f7f3a2d184cb3fef064e1390965258eceb30f2e9b259a90d007"
       }
     },
     {
@@ -302,7 +462,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -311,7 +471,7 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/executing-plans/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/executing-plans/SKILL.md",
         "sha256": "1b25bb251f226897ce8dcae888748efa25c6931d37e8c1f3f61a543571fa3e68"
       }
     },
@@ -321,7 +481,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -330,7 +490,7 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/finishing-a-development-branch/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/finishing-a-development-branch/SKILL.md",
         "sha256": "6e891b0115346a8195b502e259f13fe1bce503091852a7e577e2628916e64f5b"
       }
     },
@@ -341,7 +501,7 @@
         "design",
         "web"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -350,7 +510,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/frontend-design/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/frontend-design/SKILL.md",
         "sha256": "1608ea77fbb6fc30d13a97d12cfa8ebf31358d40f0dd97beed24829d6b3f45dd"
       }
     },
@@ -360,7 +520,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "luomious",
         "url": "https://github.com/luomious/dsh-skill-catalog"
@@ -369,8 +529,48 @@
       "license": null,
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/git-commit-message/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/git-commit-message/SKILL.md",
         "sha256": "cd2bd537c111ef057804c5c060492484e895aa310b18fe7c31c53f91983354ab"
+      }
+    },
+    {
+      "id": "git-workflow",
+      "description": "安全处理 Git 状态检查、提交信息、commit、分支、push、PR 和 rebase。用于用户要求检查改动、生成或创建提交、管理分支、推送、发起 PR 或整理历史时；严格区分每个动作的授权，并保护工作树中已有和无关的修改。",
+      "categories": [
+        "developer-tools",
+        "git"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/git-workflow/SKILL.md",
+        "sha256": "9e5f270012457e43670891fc8512b4a16ade9e8f332e4a4f7d94ffb048b6bc55"
+      }
+    },
+    {
+      "id": "github-actions-gen",
+      "description": "分析真实项目并生成或修订安全、可验证的 GitHub Actions workflow；当用户要求创建 CI、测试矩阵、构建、Release、部署、缓存、Secrets、OIDC、PR 自动化或排查 workflow 配置时使用",
+      "categories": [
+        "developer-tools",
+        "cicd"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/github-actions-gen/SKILL.md",
+        "sha256": "b0e639948cdc7e1b286cc20977787e62c57a0acd730237f034786832c876cf8e"
       }
     },
     {
@@ -379,7 +579,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "redbaronyyyyy-eng",
         "url": "https://github.com/redbaronyyyyy-eng/humanizer-zh-academic"
@@ -388,8 +588,28 @@
       "license": null,
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/humanizer-zh-academic/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/humanizer-zh-academic/SKILL.md",
         "sha256": "61cdc739c8e2cbdd07fb9524c33137bbd6a81512d814e2e92be5fe562aa1fee9"
+      }
+    },
+    {
+      "id": "i18n-helper",
+      "description": "国际化/本地化助手 — 扫描代码中的硬编码文本、生成 i18n 配置、批量翻译",
+      "categories": [
+        "developer-tools",
+        "i18n"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/i18n-helper/SKILL.md",
+        "sha256": "7f7310b78d076d53111580b02f4a3f9e2086323108520e9b684218032b9a3729"
       }
     },
     {
@@ -399,7 +619,7 @@
         "writing",
         "communication"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -408,7 +628,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/internal-comms/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/internal-comms/SKILL.md",
         "sha256": "067b7587a344a928fc6534ef66b1bcd591fc7c26d207ea7ca3334aeb678d6475"
       }
     },
@@ -418,7 +638,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "luomious",
         "url": "https://github.com/luomious/dsh-skill-catalog"
@@ -427,8 +647,28 @@
       "license": null,
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/log-analysis/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/log-analysis/SKILL.md",
         "sha256": "375ea6218bbd19f609820e0272b0c92efc88ed68a4e259b2bb58efdb7b1486e8"
+      }
+    },
+    {
+      "id": "log-analyzer",
+      "description": "日志分析助手 — 智能解析日志文件，识别异常模式，定位问题根因",
+      "categories": [
+        "developer-tools",
+        "observability"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/log-analyzer/SKILL.md",
+        "sha256": "edc38a3a85f91ab4844d129e3ba10a6edc17a08423cfc4d39c51ac6c34838662"
       }
     },
     {
@@ -438,7 +678,7 @@
         "developer-tools",
         "mcp"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -447,7 +687,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/mcp-builder/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/mcp-builder/SKILL.md",
         "sha256": "0f4592dcb53cf2b5d6b7febee6b4152018b565551a1c29e3c612f57b218ab295"
       }
     },
@@ -457,7 +697,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "luomious",
         "url": "https://github.com/luomious/dsh-skill-catalog"
@@ -466,7 +706,7 @@
       "license": null,
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/paper-summary/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/paper-summary/SKILL.md",
         "sha256": "5a98bb0b1ec4c25db15630071672dda087f44c64249525844b82487aa1dcf860"
       }
     },
@@ -477,7 +717,7 @@
         "office",
         "document"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -486,8 +726,28 @@
       "license": "Proprietary. LICENSE.txt has complete terms",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/pdf/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/pdf/SKILL.md",
         "sha256": "9f78b8359fbd4943ad260a7a1e436e5a96503406d6c34e99f69223d647d85b9c"
+      }
+    },
+    {
+      "id": "perf-profiler",
+      "description": "基于可复现基线和 profiler 证据分析性能问题。用于用户要求定位慢接口、慢任务、慢查询、内存或网络瓶颈，制定优化方案，或验证优化收益时；区分实测结论与静态推断，不虚构耗时和提升比例，生产环境操作需明确授权。",
+      "categories": [
+        "developer-tools",
+        "performance"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/perf-profiler/SKILL.md",
+        "sha256": "d215074727021ffe6a1c32b8fc77d4a681a9685deeddbbfba3c609cbd5374a51"
       }
     },
     {
@@ -497,7 +757,7 @@
         "office",
         "presentation"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -506,7 +766,7 @@
       "license": "Proprietary. LICENSE.txt has complete terms",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/pptx/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/pptx/SKILL.md",
         "sha256": "8dd8d7325fd67ab17ad5097f924c8cf2a3d9b21bccbf087c2d770eb86cd7c1fb"
       }
     },
@@ -516,7 +776,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -525,8 +785,28 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/receiving-code-review/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/receiving-code-review/SKILL.md",
         "sha256": "f8d534ce6edf899aafbb6054a86e8f1da0187c118be0b4039d86cfde611c5a34"
+      }
+    },
+    {
+      "id": "refactor-advisor",
+      "description": "重构顾问 - 识别代码坏味道并提供重构方案",
+      "categories": [
+        "developer-tools",
+        "refactoring"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/refactor-advisor/SKILL.md",
+        "sha256": "79e57f70f0bf4c07d3d6b03dea69c865ac9c7fe5bee2fdde71d89c53eaf63186"
       }
     },
     {
@@ -535,7 +815,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -544,8 +824,28 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/requesting-code-review/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/requesting-code-review/SKILL.md",
         "sha256": "4629ab5686d32a1e6bea243eaf9a9aa400edba50e49b15f00d597992ccb10895"
+      }
+    },
+    {
+      "id": "security-audit",
+      "description": "代码安全审计 - 漏洞扫描、依赖检查、安全最佳实践",
+      "categories": [
+        "developer-tools",
+        "security"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/security-audit/SKILL.md",
+        "sha256": "c6a811d71b218478b51fb15b916e13112755b654310b35ffd79879b1410f785a"
       }
     },
     {
@@ -554,7 +854,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "MrGeDiao",
         "url": "https://github.com/MrGeDiao/shuorenhua"
@@ -563,7 +863,7 @@
       "license": null,
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/shuorenhua/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/shuorenhua/SKILL.md",
         "sha256": "087c9e7a443388ad512821d8aceeddc32e0462aba3995e52a8090581df075031"
       }
     },
@@ -574,7 +874,7 @@
         "developer-tools",
         "meta"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -583,8 +883,28 @@
       "license": null,
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/skill-creator/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/skill-creator/SKILL.md",
         "sha256": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf"
+      }
+    },
+    {
+      "id": "skill-curator",
+      "description": "中文 Skill 收录评估器。用于核验 GitHub 上的 Claude Code、Codex、Agent Skills、Plugin、MCP、CLI 或 Agent 工作流是否值得加入精选列表；检查真实资产、安装方式、活跃度、重复项和安全边界，并生成分类、中文描述与可追溯证据。",
+      "categories": [
+        "developer-tools",
+        "meta"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/skill-curator/SKILL.md",
+        "sha256": "133266289307149c9650714f589eaceb11eae9efd97f402f785702f1550f03e0"
       }
     },
     {
@@ -594,7 +914,7 @@
         "creative",
         "communication"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -603,7 +923,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/slack-gif-creator/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/slack-gif-creator/SKILL.md",
         "sha256": "2efca615ce55a3edd8fc05c779068a8085816617991987e446606403cd3abb22"
       }
     },
@@ -613,7 +933,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -622,7 +942,7 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/subagent-driven-development/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/subagent-driven-development/SKILL.md",
         "sha256": "27081029a6b06e8f9d6cea6bc1ab8b444869dcd5575383760e0c4ec11b6229c4"
       }
     },
@@ -632,7 +952,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -641,7 +961,7 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/systematic-debugging/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/systematic-debugging/SKILL.md",
         "sha256": "f0e3e21f0d815706a6d16a1dd2310b076a54e6f9ddfc501cfb5a334c62bd3fd3"
       }
     },
@@ -651,7 +971,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -660,8 +980,28 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/test-driven-development/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/test-driven-development/SKILL.md",
         "sha256": "701d23255e599cb5ca8a68c5ecb92c601e89ab2311292a4dd6c7a0fec7f74178"
+      }
+    },
+    {
+      "id": "test-generator",
+      "description": "依据真实代码契约生成并验证单元测试或集成测试。用于用户要求为函数、类、接口或缺陷补测试、提高覆盖率、生成回归用例或完善测试策略时；先读取现有测试与调用方，不猜测空值、异常或超时行为，不自动安装框架或访问生产依赖。",
+      "categories": [
+        "developer-tools",
+        "testing"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/test-generator/SKILL.md",
+        "sha256": "99b8c93fe91b9b576f4f8316932508f21998c74d5ded42c7727c99bd755e7044"
       }
     },
     {
@@ -671,7 +1011,7 @@
         "design",
         "frontend"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -680,7 +1020,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/theme-factory/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/theme-factory/SKILL.md",
         "sha256": "c35893e221e28895c52143cc11bf30e41a44817796b39d4b15727dadc9796552"
       }
     },
@@ -690,7 +1030,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -699,7 +1039,7 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/using-git-worktrees/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/using-git-worktrees/SKILL.md",
         "sha256": "13ec7407756b0ad5594afae3736af0531899db10e2bcd7a93cc4f5d836c09d4d"
       }
     },
@@ -709,7 +1049,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -718,7 +1058,7 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/using-superpowers/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/using-superpowers/SKILL.md",
         "sha256": "3da2066e0fe0fe0022f48cc6363b8f0dab1cca5c0ba77d8a387505d0d48ff9ed"
       }
     },
@@ -728,7 +1068,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -737,8 +1077,128 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/verification-before-completion/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/verification-before-completion/SKILL.md",
         "sha256": "bd976c5f28413d08b3a7dc3026549a6ff43fab4e282b74842a9389cc2034eda4"
+      }
+    },
+    {
+      "id": "video-assemble",
+      "description": "合成视频解说最终成片：把旁白音频铺到源视频上，按旁白窗口压低原声，生成 SRT / ASS 字幕并可烧录， 最后做响度标准化。作为最终合成阶段使用。输入源视频、tts_meta.json 与旁白位置； 输出 recap 成片和字幕。触发词：视频合成、混音、字幕、压字幕、assemble video、mux、ducking、subtitles、成片。",
+      "categories": [
+        "creative",
+        "media"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "zenstory-ai",
+        "url": "https://github.com/zenstory-ai/video-recap-skills"
+      },
+      "origin": "https://github.com/zenstory-ai/video-recap-skills",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/video-assemble/SKILL.md",
+        "sha256": "97f5b07a4362acdcd89d426c7b82627efe57a2b93e535cb184cda4f248fb5ca0"
+      }
+    },
+    {
+      "id": "video-cut",
+      "description": "把长视频按 Agent 选择的原片区间剪成短片。作为两阶段创作流程中的剪辑环节，读取 clip_plan.json 与源视频， 输出 edited_source.mp4；随后 Agent 按输出时间线写 narration.json。单独调用且未传 --no-narration-map 时， 仍支持旧版单阶段路径，把原片时间的 narration.json 映射为 narration_mapped.json。 触发词：视频剪辑、剪辑式解说、video cut、clip plan、拼剪。",
+      "categories": [
+        "creative",
+        "media"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "zenstory-ai",
+        "url": "https://github.com/zenstory-ai/video-recap-skills"
+      },
+      "origin": "https://github.com/zenstory-ai/video-recap-skills",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/video-cut/SKILL.md",
+        "sha256": "be6c3595288c041794d11049c01a160a4751b10c655acb82ffd669dffd2c5cbb"
+      }
+    },
+    {
+      "id": "video-recap",
+      "description": "从输入视频端到端生成中文解说成片。用户提供 .mp4 / .mov / .mkv / .webm，并要求添加旁白、 配音、总结、短剧/电视剧/电影/纪录片/科普解说时使用。负责编排 video-* 技能链：视频理解 → Agent 制定故事与视听方案 → 剪辑 → 配音 → 合成。触发词：视频解说、视频旁白、生成解说、 视频 recap、video recap、voiceover、narration、auto-dub、recap。",
+      "categories": [
+        "creative",
+        "media"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "zenstory-ai",
+        "url": "https://github.com/zenstory-ai/video-recap-skills"
+      },
+      "origin": "https://github.com/zenstory-ai/video-recap-skills",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/video-recap/SKILL.md",
+        "sha256": "a402f3dcc0c44bfbcb680959394ccbf0b3baaff4ae3db8e6472b0341858c5813"
+      }
+    },
+    {
+      "id": "video-script",
+      "description": "对已完成分析的视频进行导演与剪辑策划，再写带时间戳的中文解说并校验。work_dir 已包含 agent_narration_brief.md 与 vlm_analysis.json 时使用。适用于故事方向、片段选择、画面/原声/旁白分工、 解说写作与复核。输入 work_dir 中的理解索引；输出 recap_story_plan.json、visual_audio_board.json、 可选 style_card.json、cut 模式需要的 clip_plan.json，以及通过校验的 narration.json。触发词：解说词、写解说、视频旁白、 narration script、写稿、解说文案、剪辑思路、导演思路。",
+      "categories": [
+        "creative",
+        "media"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "zenstory-ai",
+        "url": "https://github.com/zenstory-ai/video-recap-skills"
+      },
+      "origin": "https://github.com/zenstory-ai/video-recap-skills",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/video-script/SKILL.md",
+        "sha256": "51c01c713ed6e8bc17a19cce8bed2f1a82dbd2df47be1ec10d4d6b4647ab09ad"
+      }
+    },
+    {
+      "id": "video-understanding",
+      "description": "把视频分析为结构化理解索引：场景检测、ASR 转写、逐场景 VLM 观察、静音窗口、融合时间线和写作 brief。 用于理解、索引或总结视频，也作为后续创作前的分析阶段。输入视频文件；输出 scenes.json、 asr_result.json、vlm_analysis.json、silence_periods.json、timeline_fusion.json、agent_narration_brief.md。 触发词：视频理解、视频分析、视频索引、video understanding、analyze video、看懂视频。",
+      "categories": [
+        "creative",
+        "media"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "zenstory-ai",
+        "url": "https://github.com/zenstory-ai/video-recap-skills"
+      },
+      "origin": "https://github.com/zenstory-ai/video-recap-skills",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/video-understanding/SKILL.md",
+        "sha256": "166d9f1f56b1c9268054dfae863b564ca93f0017d3087408d7f671bea468fd00"
+      }
+    },
+    {
+      "id": "video-voiceover",
+      "description": "把带时间戳的 narration.json 合成为中文解说音频。使用 MiMo TTS（mimo-v2.5-tts）或 Fish Audio（s2.1-pro-free）逐段生成语音， 按时间窗动态适配语速并处理响度；输入输出时间线上的旁白，产出 tts_segments 与 tts_meta.json。 旧版直接剪辑路径也可显式传入 narration_mapped.json。触发词：配音、语音合成、TTS、解说配音、 voiceover、text to speech、旁白配音。",
+      "categories": [
+        "creative",
+        "media"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "zenstory-ai",
+        "url": "https://github.com/zenstory-ai/video-recap-skills"
+      },
+      "origin": "https://github.com/zenstory-ai/video-recap-skills",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/video-voiceover/SKILL.md",
+        "sha256": "a74d1d378b05cd5783003301ed1fcd51b9a211aafecd19a190b75362c69e93fa"
       }
     },
     {
@@ -748,7 +1208,7 @@
         "web",
         "design"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -757,7 +1217,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/web-artifacts-builder/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/web-artifacts-builder/SKILL.md",
         "sha256": "81c5002c6643b0de7b8710b00e7a9038daa6fb9b68d59870ee6adb12da8d10f8"
       }
     },
@@ -768,7 +1228,7 @@
         "testing",
         "web"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -777,7 +1237,7 @@
       "license": "Complete terms in LICENSE.txt",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/webapp-testing/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/webapp-testing/SKILL.md",
         "sha256": "51b7349e77ec63b7744a6f63647e7566a0b4d2e301121cc10e8c2113af6556a2"
       }
     },
@@ -787,7 +1247,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -796,7 +1256,7 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/workflow-runner/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/workflow-runner/SKILL.md",
         "sha256": "445b25e66a8ab8cd1102e4bebdf8cd616a520b8d78e3684a0ffe6b3a11804e31"
       }
     },
@@ -806,7 +1266,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -815,7 +1275,7 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/writing-plans/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/writing-plans/SKILL.md",
         "sha256": "ab0692c3515b2460ce18f8bba0ac764f86c3671f4b6bdd16a2387c8965ae0c0a"
       }
     },
@@ -825,7 +1285,7 @@
       "categories": [
         "general"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "jnMetaCode",
         "url": "https://github.com/jnMetaCode/superpowers-zh"
@@ -834,7 +1294,7 @@
       "license": "MIT",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/writing-skills/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/writing-skills/SKILL.md",
         "sha256": "729d4eebd071d4c5f435abc886b28b1729da3789876a30186ef2751be6a5da2e"
       }
     },
@@ -845,7 +1305,7 @@
         "office",
         "spreadsheet"
       ],
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "anthropics",
         "url": "https://github.com/anthropics/skills"
@@ -854,8 +1314,68 @@
       "license": "Proprietary. LICENSE.txt has complete terms",
       "updatedAt": "2026-09-01",
       "download": {
-        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/skills/xlsx/SKILL.md",
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/xlsx/SKILL.md",
         "sha256": "4507dc4a150047fe7dd6045e24324b19db8a89ec62c7254fc162dd36d98312e8"
+      }
+    },
+    {
+      "id": "zh-code-reviewer",
+      "description": "中文代码审查专家 - 生成详细的中文代码审查报告",
+      "categories": [
+        "developer-tools",
+        "code-review"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/zh-code-reviewer/SKILL.md",
+        "sha256": "b7ec773f213d78067607554fb9f5ca3c9265b57b6e80ec6daa334c94ef00aa40"
+      }
+    },
+    {
+      "id": "zh-docgen",
+      "description": "中文文档生成器 - 从代码库自动生成中文技术文档",
+      "categories": [
+        "developer-tools",
+        "documentation"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/zh-docgen/SKILL.md",
+        "sha256": "df873221240fba44b919f8002fa669e13969b7e64d342283ea63d145078a102e"
+      }
+    },
+    {
+      "id": "zh-readme",
+      "description": "中文 README 生成器 - 先分析项目，再生成面向中文开发者的高质量 README",
+      "categories": [
+        "developer-tools",
+        "documentation"
+      ],
+      "version": "1.6.0",
+      "author": {
+        "name": "laolaoshiren",
+        "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+      },
+      "origin": "https://github.com/laolaoshiren/claude-code-skills-zh",
+      "license": "MIT",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/skills/zh-readme/SKILL.md",
+        "sha256": "e30e84d26619413df6e2f5a02c0392f54f027acb7d8333545e62c336551be85b"
       }
     }
   ]

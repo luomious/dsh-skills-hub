@@ -50,7 +50,35 @@ const CATEGORIES = {
   "theme-factory": ["design", "frontend"],
   "web-artifacts-builder": ["web", "design"],
   "webapp-testing": ["testing", "web"],
-  "xlsx": ["office", "spreadsheet"]
+  "xlsx": ["office", "spreadsheet"],
+  // laolaoshiren/claude-code-skills-zh（中文开发技能，2026-09-02 v1.6.0 导入）
+  "api-tester": ["developer-tools", "testing"],
+  "changelog-gen": ["developer-tools", "git"],
+  "db-migrator": ["developer-tools", "database"],
+  "dep-auditor": ["developer-tools", "security"],
+  "ds-mapper": ["developer-tools", "documentation"],
+  "env-manager": ["developer-tools", "config"],
+  "error-translator": ["developer-tools", "nls"],
+  "eslint-fix": ["developer-tools", "linting"],
+  "git-workflow": ["developer-tools", "git"],
+  "github-actions-gen": ["developer-tools", "cicd"],
+  "i18n-helper": ["developer-tools", "i18n"],
+  "log-analyzer": ["developer-tools", "observability"],
+  "perf-profiler": ["developer-tools", "performance"],
+  "refactor-advisor": ["developer-tools", "refactoring"],
+  "security-audit": ["developer-tools", "security"],
+  "skill-curator": ["developer-tools", "meta"],
+  "test-generator": ["developer-tools", "testing"],
+  "zh-code-reviewer": ["developer-tools", "code-review"],
+  "zh-docgen": ["developer-tools", "documentation"],
+  "zh-readme": ["developer-tools", "documentation"],
+  // zenstory-ai/video-recap-skills（视频技能，2026-09-02 v1.6.0 导入）
+  "video-assemble": ["creative", "media"],
+  "video-cut": ["creative", "media"],
+  "video-recap": ["creative", "media"],
+  "video-script": ["creative", "media"],
+  "video-understanding": ["creative", "media"],
+  "video-voiceover": ["creative", "media"]
 };
 
 function authorOf(origin) {

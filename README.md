@@ -9,7 +9,7 @@ DSH Desktop 自带 `dsh-skills-manager` 插件，其「市场」页已实现：�
 
 本仓库就是这样一个目录源，且采用**一个仓库、一个统一源**的大型库架构：
 
-- **统一源（2026-09-01 v1.3.0 起）**：`official` 源位于根目录 `skills/`，当前 **44 个技能**——19 个 anthropics 官方 + 19 个 superpowers-zh 中文技能 + humanizer-zh-academic + shuorenhua + 4 个社区种子（code-review / git-commit-message / log-analysis / paper-summary）。**只需一个源即可搜索全部技能，无需切换源**。
+- **统一源（2026-09-01 v1.3.0 起）**：`official` 源位于根目录 `skills/`，当前 **70 个技能**——19 个 anthropics 官方 + 19 个 superpowers-zh 中文技能 + humanizer-zh-academic + shuorenhua + 4 个社区种子（code-review / git-commit-message / log-analysis / paper-summary）。**只需一个源即可搜索全部技能，无需切换源**。
 - **兼容源**：`sources/community/` 保留 4 个社区种子技能（独立 manifest + 索引 + 900KiB 配额），向后兼容 v1.1.x 多源用法。
 - 通过 **jsDelivr CDN** 托管（`cdn.jsdelivr.net/gh/<owner>/<repo>@v<version>/...`），manifest / 索引 / 下载全部同源，且国内可访问；
 - skill 文件 **vendor 快照**进本仓库（sha256 固定、内容不可变，安装校验 100% 可复现）；
@@ -30,7 +30,7 @@ DSH Desktop 自带 `dsh-skills-manager` 插件，其「市场」页已实现：�
 
    ```bash
    git add -A && git commit -m "feat(skills): bump to N skills"
-   git tag v1.5.1
+   git tag v1.6.0
    git push origin main --tags
    ```
 
@@ -39,17 +39,17 @@ DSH Desktop 自带 `dsh-skills-manager` 插件，其「市场」页已实现：�
 ## 在 DSH 中使用
 
 1. 打开 DSH Web GUI（http://127.0.0.1:43120）→ 设置 → **Skills** → **市场** 页；
-2. 「添加目录源（manifest URL）」——默认只添加**统一源**即可搜索全部 44 个技能：
+2. 「添加目录源（manifest URL）」——默认只添加**统一源**即可搜索全部 70 个技能：
 
    ```
-   # 统一源（44 个技能：官方 + 中文 + 社区种子，推荐）
-   https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/manifest.json
+   # 统一源（70 个技能：官方 + 中文 + 社区种子，推荐）
+   https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/manifest.json
    ```
 
    （可选）兼容旧多源用法再加 community 源：
 
    ```
-   https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.5.1/sources/community/manifest.json
+   https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.6.0/sources/community/manifest.json
    ```
 
 3. 添加后**选中**该源 → 即可浏览 / 搜索 / 分类 / 一键安装（SHA-256 强校验 + 原子安装）。搜索只落在当前选中源内（契约设计，非 bug）。
@@ -177,6 +177,8 @@ DSH 桌面当前有两种渠道让技能可用：
 | [jnMetaCode/superpowers-zh](https://github.com/jnMetaCode/superpowers-zh) | 19 个中文技能（中文代码审查/中文提交规范/中文文档/中文 Git 工作流/头脑风暴/系统化调试/测试驱动开发等），已转统一源 | MIT |
 | [MrGeDiao/shuorenhua](https://github.com/MrGeDiao/shuorenhua) | 「说人话」：把晦涩英文文本转成人话，去 AI 味 | MIT |
 | [redbaronyyyyy-eng/humanizer-zh-academic](https://github.com/redbaronyyyyy-eng/humanizer-zh-academic) | 中文学术去 AI 味（论文/开题报告/结课论文等 AIGC 痕迹润色） | MIT |
+| [laolaoshiren/claude-code-skills-zh](https://github.com/laolaoshiren/claude-code-skills-zh) | 20 个中文开发技能（API 测试/变更日志/DB 迁移/依赖审计/ESLint/Git 工作流/GitHub Actions/i18n/日志分析/性能剖析/重构/安全审计/中文代码审查/中文文档/中文 README 等） | MIT |
+| [zenstory-ai/video-recap-skills](https://github.com/zenstory-ai/video-recap-skills) | 6 个视频技能（视频理解/脚本/剪辑/配音/合成/端到端解说），中文优先 | MIT |
 
 内容版权归原作者；本仓库仅做快照分发。
 
