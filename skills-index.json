@@ -1,0 +1,387 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-09-01T08:33:46.883Z",
+  "revision": "1.1.0-2026-09-01",
+  "items": [
+    {
+      "id": "academy-guide",
+      "description": "Stop and check this skill before finishing any reply to a question about how to use Claude or a Claude product — it recommends matching courses, tutorials, and use cases from Claude Academy (academy.claude.com), Anthropic's learning hub. Trigger on: “how do I”, “how can I”, “getting started with”, “what can Claude do”, “teach me”, “learn to use”; questions about artifacts, projects, skills, plugins, connectors, MCP; requests about rolling Claude out to a team, class, or",
+      "categories": [
+        "learning",
+        "document"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Complete terms in LICENSE.txt",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/academy-guide/SKILL.md",
+        "sha256": "8e4491ab87b0b581e14fbc73f300f7bd195407adbb712da6a48e1de1c692374b"
+      }
+    },
+    {
+      "id": "algorithmic-art",
+      "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
+      "categories": [
+        "design",
+        "creative"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Complete terms in LICENSE.txt",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/algorithmic-art/SKILL.md",
+        "sha256": "6688fc81bb2051d3f234385b50ce160834eb0b0510ed8a5816cc412c1d28c352"
+      }
+    },
+    {
+      "id": "brand-guidelines",
+      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
+      "categories": [
+        "design",
+        "marketing"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Complete terms in LICENSE.txt",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/brand-guidelines/SKILL.md",
+        "sha256": "a0aa0a21ebf9e8511a045cc234bc839adc2b6706db727add14e9855f242e11a7"
+      }
+    },
+    {
+      "id": "canvas-design",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
+      "categories": [
+        "design",
+        "creative"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Complete terms in LICENSE.txt",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/canvas-design/SKILL.md",
+        "sha256": "7bebc4a2cf108c55c1e52bb96b1050dc1ab2f9492e9c2d43f1fe57f826728f4d"
+      }
+    },
+    {
+      "id": "claude-api",
+      "description": "Reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration. TRIGGER — read BEFORE opening the target file; don't skip because it “looks like a one-liner” — whenever: the prompt names Claude/Anthropic in any form (Claude, Anthropic, Fable, Opus, Sonnet, Haiku, `anthropic`, `@anthropic-ai`, `claude-*`, `us.anthropic.*`, `[1m]`); the user asks about an LLM (pricing/model choice/limits/caching) — never",
+      "categories": [
+        "developer-tools",
+        "api"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Complete terms in LICENSE.txt",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/claude-api/SKILL.md",
+        "sha256": "3687e23fc9e3a7839e44ee9e0d562b5b2cc6c59eb1cdd99ba88fadcf9b25870c"
+      }
+    },
+    {
+      "id": "discernment-nudge",
+      "description": "After you give a substantive answer or draft that the user may act on — advice or recommendations, drafted artifacts such as goals, plans, pitches, proposals, or emails, estimates or projections, analysis or interpretation of data, factual claims they may rely on, or a multi-step argument — invoke this skill BEFORE finalizing your reply and then, if it applies, append 2-3 short follow-up questions, each tied to something specific in what you just produced, that help the user check key facts,",
+      "categories": [
+        "writing",
+        "analysis"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Complete terms in LICENSE.txt",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/discernment-nudge/SKILL.md",
+        "sha256": "6120ea7d111c2fd3c9c8bd1850b647252d79621e17aad7b17ebf21e07d4b37c3"
+      }
+    },
+    {
+      "id": "doc-coauthoring",
+      "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
+      "categories": [
+        "office",
+        "writing"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": null,
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/doc-coauthoring/SKILL.md",
+        "sha256": "acb9b89b228fb818ffe2f464e40b1cdbf6948b50ceeeb7378f0e5b9d78c996ad"
+      }
+    },
+    {
+      "id": "docx",
+      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', '.dotx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx or .dotx files, inserting or replacing images in documents, performing find-and-replace in",
+      "categories": [
+        "office",
+        "document"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Proprietary. LICENSE.txt has complete terms",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/docx/SKILL.md",
+        "sha256": "6f9f3a1436b285cbc8a5eaddc08be7523fa9b30089c945a95e4cd78e33cf391d"
+      }
+    },
+    {
+      "id": "frontend-design",
+      "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
+      "categories": [
+        "design",
+        "web"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Complete terms in LICENSE.txt",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/frontend-design/SKILL.md",
+        "sha256": "35c43b9d10c2388dbb228047ad028c989a14033750812125f351c85aa42c7a4a"
+      }
+    },
+    {
+      "id": "internal-comms",
+      "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
+      "categories": [
+        "writing",
+        "communication"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Complete terms in LICENSE.txt",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/internal-comms/SKILL.md",
+        "sha256": "c5c061ab25b33fab2358a9be53a5cc0d528ec7c3e8a29285a041ffc95d0d8947"
+      }
+    },
+    {
+      "id": "mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+      "categories": [
+        "developer-tools",
+        "mcp"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Complete terms in LICENSE.txt",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/mcp-builder/SKILL.md",
+        "sha256": "57231330040e18e033dad8b2fdc0340a6185034c32b42b7d3448f444a6af6cf2"
+      }
+    },
+    {
+      "id": "pdf",
+      "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
+      "categories": [
+        "office",
+        "document"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Proprietary. LICENSE.txt has complete terms",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/pdf/SKILL.md",
+        "sha256": "067401220db5745f719ff8c048d545d5edc8545e809668a3a6f9e2892fa51d48"
+      }
+    },
+    {
+      "id": "pptx",
+      "description": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx or .potx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates (.potx), layouts, speaker notes, or comments. Trigger whenever the",
+      "categories": [
+        "office",
+        "presentation"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Proprietary. LICENSE.txt has complete terms",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/pptx/SKILL.md",
+        "sha256": "a3638961652ea596d5bd5cdfbadad23ea2afcea2a70de78f602ea5883154603d"
+      }
+    },
+    {
+      "id": "skill-creator",
+      "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+      "categories": [
+        "developer-tools",
+        "meta"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": null,
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/skill-creator/SKILL.md",
+        "sha256": "e030e7685e26283b4a76f5202aa3ae8516fb41dde799be5ae8ea6393ec009fe9"
+      }
+    },
+    {
+      "id": "slack-gif-creator",
+      "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.\"",
+      "categories": [
+        "creative",
+        "communication"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Complete terms in LICENSE.txt",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/slack-gif-creator/SKILL.md",
+        "sha256": "561c85ffeab639a1e84bb51cfc49f66e868a2a4c4b8945bf77b7bdaeca145a7d"
+      }
+    },
+    {
+      "id": "theme-factory",
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
+      "categories": [
+        "design",
+        "frontend"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Complete terms in LICENSE.txt",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/theme-factory/SKILL.md",
+        "sha256": "7c765e6626bf61eca30224ceeb0da51ac003c7c2f1c1743ace9b3baa305ea632"
+      }
+    },
+    {
+      "id": "web-artifacts-builder",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+      "categories": [
+        "web",
+        "design"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Complete terms in LICENSE.txt",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/web-artifacts-builder/SKILL.md",
+        "sha256": "fed403699c30a8dfc91b43bc82e76c06a0e935e86395cab943644767878a48d4"
+      }
+    },
+    {
+      "id": "webapp-testing",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+      "categories": [
+        "testing",
+        "web"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Complete terms in LICENSE.txt",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/webapp-testing/SKILL.md",
+        "sha256": "8bc27790f6e6dfc2bfa6692326d4518baacf6a31dcc646d963c729adad2f7e34"
+      }
+    },
+    {
+      "id": "xlsx",
+      "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like “the",
+      "categories": [
+        "office",
+        "spreadsheet"
+      ],
+      "version": "1.1.0",
+      "author": {
+        "name": "anthropics",
+        "url": "https://github.com/anthropics/skills"
+      },
+      "origin": "https://github.com/anthropics/skills",
+      "license": "Proprietary. LICENSE.txt has complete terms",
+      "updatedAt": "2026-09-01",
+      "download": {
+        "url": "https://cdn.jsdelivr.net/gh/luomious/dsh-skills-hub@v1.1.0/skills/xlsx/SKILL.md",
+        "sha256": "84895d7602f41abd14cba876f9b6f03168e452be825eefa668d26bb8a7150411"
+      }
+    }
+  ]
+}

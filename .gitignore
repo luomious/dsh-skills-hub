@@ -1,0 +1,12 @@
+# Node
+node_modules/
+
+# Local scratch / backups that must not be committed
+*.bak*
+*.negtest*
+scripts/*.tmp*
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
